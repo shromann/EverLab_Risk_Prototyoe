@@ -136,25 +136,25 @@ app.layout = html.Div([
         style={'display': 'flex', 'justify-content': 'center'}
     ),
     html.Div([
-        html.Label('Tobacco %'),
+        html.Label('Tobacco Abstain %'),
         dcc.Slider(
             id='tobacco-slider',
             min=0,
             max=100,
             step=10,
             value=0,
-            marks={i: f'-{i}%' for i in range(0, 110, 5)}
+            marks={i: f'{i}%' for i in range(0, 110, 5)}
         )
     ], style={'margin': '20px', 'font-family': 'Helvetica, sans-serif', 'color': 'rgb(32,31,31)', 'padding-left': '100px', 'padding-right': '100px'}),
     html.Div([
-        html.Label('Alcohol %'),
+        html.Label('Alcohol Abstain %'),
         dcc.Slider(
             id='alcohol-slider',
             min=0,
             max=100,
             step=10,
             value=0,
-            marks={i: f'-{i}%' for i in range(0, 110, 5)}
+            marks={i: f'{i}%' for i in range(0, 110, 5)}
         )
     ], style={'margin': '20px', 'font-family': 'Helvetica, sans-serif', 'color': 'rgb(32,31,31)', 'padding-left': '100px', 'padding-right': '100px'})
 ])
