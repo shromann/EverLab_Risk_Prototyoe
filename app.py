@@ -127,6 +127,7 @@ inaction_data = simulate_risk(initial_data, delta=inaction_delta, N=N)
 
 # Create the Dash app
 app = dash.Dash(__name__)
+app.title = 'Risk Score Tool'
 server = app.server
 
 app.layout = html.Div([
