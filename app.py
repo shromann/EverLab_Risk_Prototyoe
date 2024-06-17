@@ -13,7 +13,7 @@ import numpy as np
 
 
 # 1. Data Processing
-df = pd.read_csv('src/CHDdata.csv')
+df = pd.read_csv('CHDdata.csv')
 df['famhist'] = df['famhist'].replace({'Present': 1, 'Absent': 0})
 df.head()
 
